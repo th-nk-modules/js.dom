@@ -1,6 +1,7 @@
 /**
 * DOM helpers module
 * @module dom
+* @global
 */
 
 var hasClassList = !!document.documentElement.classList;
@@ -137,6 +138,7 @@ module.exports = {
     /**
      * Check for classlist
      * @memberOf module:dom#
+     * @function
      */
     hasClassList:hasClassList,
     /**
@@ -144,6 +146,7 @@ module.exports = {
      * @memberOf module:dom#
      * @param {object} elm
      * @param {string} className
+     * @function
      */
     addClass:addClass,
     /**
@@ -151,6 +154,7 @@ module.exports = {
      * @memberOf module:dom#
      * @param {object} elm
      * @param {string} className
+     * @function
      */
     removeClass:removeClass,
     /**
@@ -158,6 +162,7 @@ module.exports = {
      * @memberOf module:dom#
      * @param {object} elm
      * @param {string} className
+     * @function
      */
     hasClass:containsClass,
     /**
@@ -165,17 +170,20 @@ module.exports = {
      * @memberOf module:dom#
      * @param {object} elm
      * @param {string} className
+     * @function
      */
     toggleClass:toggleClass,
     /**
      * Removes a dom node
      * @memberOf module:dom#
      * @param {object} elm
+     * @function
      */
     remove:remove,
     /**
      * Gets current window scroll position
      * @memberOf module:dom#
+     * @function
      */
     scrollPosition:scrollPosition,
     /**
@@ -183,6 +191,7 @@ module.exports = {
      * @memberOf module:dom#
      * @param {string} str
      * @param {array} location
+     * @function
      */
     create:createDOM,
     /**
@@ -190,6 +199,7 @@ module.exports = {
      * @memberOf module:dom#
      * @param {object} elm
      * @param {function} callback
+     * @function
      */
     observe:observeDOM,
 };
